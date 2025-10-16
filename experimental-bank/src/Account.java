@@ -53,7 +53,7 @@ public class Account {
                 return true;
             } else {
                 //Prints out error message if you cannot draw that amount
-                System.out.println("-------------Insuffient Funds. Current Balance " + balance + " for " + accountNumber + " ------------------");
+                System.out.println("Insuffient Funds -- Current Balance " + balance + " for " + accountNumber);
             }
         }
         return false;
