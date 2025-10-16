@@ -32,7 +32,7 @@ public class Account {
         
         if(amount != 0 && amount < 0) {
             balance = balance + amount;
-            System.out.println("New Balance " + balance + " for " + accountNumber);
+            System.out.println(balance + " --- " + accountNumber);
         }
 
     }
@@ -53,7 +53,7 @@ public class Account {
                 return true;
             } else {
                 //Prints out error message if you cannot draw that amount
-                System.out.println("-------------Insuffient Funds. Current Balance " + balance + " for " + accountNumber + " ------------------");
+                System.out.println("Insuffient Funds -- Current Balance " + balance + " for " + accountNumber);
             }
         }
         return false;
@@ -61,6 +61,6 @@ public class Account {
 
     //Returns the amount with the Account Number and Account Holder.
     public String toString() {
-        return "Account[" + accountNumber + ", " + accountHolder + ", Balance: $" + balance + "]";
+        return "Account Number " + accountNumber + " -- " + accountHolder + " -- " + balance;
     }
 }
