@@ -32,7 +32,7 @@ public class Account {
         
         if(amount != 0 && amount < 0) {
             balance = balance + amount;
-            System.out.println("New Balance " + balance + " for " + accountNumber);
+            System.out.println("New Balance " + balance + " --- " + accountNumber);
         }
 
     }
@@ -48,7 +48,7 @@ public class Account {
                 balance -= amount;
 
                 //Prints out message to console
-                System.out.println("New Balance " + balance + " for " + accountNumber);
+                System.out.println("New Balance " + balance + " --- " + accountNumber);
                 
                 return true;
             } else {
@@ -61,6 +61,6 @@ public class Account {
 
     //Returns the amount with the Account Number and Account Holder.
     public String toString() {
-        return "Account[" + accountNumber + ", " + accountHolder + ", Balance: $" + balance + "]";
+        return "Account " + accountNumber + " -- " + accountHolder + " -- " + balance;
     }
 }
