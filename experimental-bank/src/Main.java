@@ -3,12 +3,12 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Account jaydenAccount = new Account("759231", "Jayden Viene", 5000);
-        Account ashishAccount = new Account("856712", "Ashish Kurse", 10000);
-        Account vieneAccount = new Account("123190", "Viene", 1200890);
-        Account kurseAccount = new Account("421518", "Kurse", 175901);
+        Account kaleAccount = new Account("759231", "Kale", 3000);
+        Account jamesAccount = new Account("856712", "James", 7200);
+        Account vieneAccount = new Account("123190", "Viene", 12890);
+        Account kurseAccount = new Account("421518", "Kurse", 171);
 
-        Account[] allAccounts = {jaydenAccount, ashishAccount, vieneAccount, kurseAccount};
+        Account[] allAccounts = {kaleAccount, jamesAccount, vieneAccount, kurseAccount};
 
         //Deposits into Account
         allAccounts[0].deposit(750);
@@ -17,10 +17,10 @@ public class Main {
         allAccounts[3].deposit(3000);
         
         //Withdraws from account
-        allAccounts[0].withdraw(10000);
+        allAccounts[0].withdraw(576);
         allAccounts[1].withdraw(10000);
         allAccounts[2].withdraw(10000);
-        allAccounts[3].withdraw(10000);
+        allAccounts[3].withdraw(576);
 
 
         //Prints out final sums
